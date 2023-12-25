@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary:hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --font-size:16px;
+    --font : 'Figtree', sans-serif;
+}
+
+body{
+    background-color: var(--primary);
+    font-family: var(--font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+   font-family: var(--font)
+}
+.card{
+  border: 1px solid black;
+  padding: 15px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  box-shadow: 15px 15px;
+}
+.card .card_image img{
+    border-radius: 10px;
+    margin: 15px auto;
+   width: 100%;
+}
+.card .card_content .badge{
+    margin-bottom: 15px;
+}
+.card .card_content .badge span{
+    font-weight: 800;
+    font-size: 12px;
+    background-color: var(--primary);
+    padding: 2px 10px;
+    border-radius: 4px;
+   
+}
+.card .card_main_content span{
+    font-size: 12px;
+}
+.card .card_main_content h3{
+    margin: 10px 0;
+    color: var(--primary);
+    font-size: .9em;
+}
+.card .card_main_content p{
+    font-size: 14px;
+    width: 100%;
+    color: var(--Grey);
+}
+.card .card_footer{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.card .card_footer img{
+    width: 2.5vw;
+    margin-right: 10px;
+}
+.card .card_footer p {
+    font-size: 12px;
+    font-weight: 800;
+}
+@media only screen and (max-width: 375px) {
+   .card {
+    width: 250px;
+   }
+   .card .card_main_content h3{
+    color: black;
+   }
+   .card .card_main_content p{
+    font-size: 12px;
+   }
+   .card .card_footer img{
+    width: 20px;
+   }
+}
